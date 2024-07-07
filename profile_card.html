@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Card</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 800px;
+        }
+        .personal {
+            background: linear-gradient(45deg, #2e2d2d, #eeebec);
+            color: white;
+            padding: 20px;
+            width: 50%;
+            position: relative;
+            text-align: center;
+        }
+        .personal::before {
+            content: "Pro";
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #da8434;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .personal img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            border: 3px solid white;
+            margin-bottom: 10px;
+        }
+        .personal h2 {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .personal p {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .stats div {
+            text-align: center;
+        }
+        .stats div h3 {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+        .stats div p {
+            margin: 0;
+            font-size: 12px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+        }
+        .buttons button {
+            border: 1px solid #000;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .buttons .follow {
+            background: #fff;
+            color: #000;
+        }
+        .buttons .hire {
+            background: #000;
+            color: #fff;
+        }
+        .description {
+            padding: 20px;
+            width: 50%;
+            text-align: center;
+        }
+        .description h1 {
+            color: #000;
+        }
+        .description p {
+            color: #666;
+        }
+        .short_details{
+            line-height: 1.2;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="personal">
+            <img src="profile.jpg" alt="Profile Picture">
+            <h2>Mohammad Kamrul Hasan.</h2>
+            <p><strong>Web Developer</strong></p>
+            <p class="short_details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus atque, itaque esse blanditiis aut pariatur corrupti quis, quisquam earum architecto doloribus alias quam amet tempora voluptate facilis porro necessitatibus nesciunt in? Ratione iusto illum repudiandae facere iste aliquam mollitia similique!</p>
+            <div class="stats">
+                <div>
+                    <h3>18</h3>
+                    <p>Projects</p>
+                </div>
+                <div>
+                    <h3>464</h3>
+                    <p>Following</p>
+                </div>
+                <div>
+                    <h3>852</h3>
+                    <p>Followers</p>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="follow">Follow</button>
+                <button class="hire">Hire Me</button>
+            </div>
+        </div>
+        <div class="description">
+            <h1>Minimal Profile Card</h1>
+            <p>HTML & CSS</p>
+        </div>
+    </div>
+</body>
+</html>
